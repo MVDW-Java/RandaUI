@@ -1,0 +1,11 @@
+color_scheme:
+    primary:
+        states:
+            0: "#000"
+            1: "#111"
+            2: "#333"
+
+component:
+    button:
+        default:
+            - color: "fff"

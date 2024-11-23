@@ -1,0 +1,22 @@
+name: "Randamu's Playground"
+title_structure: "{main.name} - {nav.pagename}"
+
+index: "home"
+
+sitemap:
+    - name: "Home"
+      path: "/"
+      conf: "index"
+      submenu: false
+    - name: "Support"
+      path: false
+      conf: false
+      submenu:
+          - name: "Contact"
+            path: "/support/contact"
+            conf: "contact"
+            submenu: false
+          - name: "FAQ"
+            path: "/support/faq"
+            conf: "faq"
+            submenu: false

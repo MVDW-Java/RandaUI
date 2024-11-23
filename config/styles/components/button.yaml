@@ -1,0 +1,21 @@
+variants:
+    primary:
+        base: "bg-blue-500 text-white font-semibold rounded-lg"
+        states:
+            hover: "hover:bg-blue-600"
+            focus: "focus:ring-2 focus:ring-blue-300 focus:outline-none"
+            disabled: "disabled:bg-blue-300 disabled:cursor-not-allowed"
+        sizes:
+            sm: "px-2 py-1 text-sm"
+            md: "px-4 py-2 text-base"
+            lg: "px-6 py-3 text-lg"
+    secondary:
+        base: "bg-gray-200 text-gray-800 font-semibold rounded-lg"
+        states:
+            hover: "hover:bg-gray-300"
+            focus: "focus:ring-2 focus:ring-gray-200 focus:outline-none"
+            disabled: "disabled:bg-gray-100 disabled:cursor-not-allowed"
+        sizes:
+            sm: "px-2 py-1 text-sm"
+            md: "px-4 py-2 text-base"
+            lg: "px-6 py-3 text-lg"

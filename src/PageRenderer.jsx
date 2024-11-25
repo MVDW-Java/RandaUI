@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { renderComponent } from "./utils/componentRenderer";
+import { LayoutRegistry } from "./utils/layoutRegistry";
 
 const PageRenderer = ({ pageConfig }) => {
     const [pageData, setPageData] = useState(null);
@@ -34,12 +35,16 @@ const PageRenderer = ({ pageConfig }) => {
         );
     }
 
+    const Layout = LayoutRegistry[pageData.layout || "default"];
+
     return (
-        <div className={`page-${pageConfig}`}>
-            {pageData.components?.map((componentConfig, index) =>
-                renderComponent(componentConfig, index),
-            )}
-        </div>
+        <Layout>
+            <div className={`page-${pageConfig}`}>
+                {pageData.components?.map((componentConfig, index) =>
+                    renderComponent(componentConfig, index),
+                )}
+            </div>
+        </Layout>
     );
 };
 

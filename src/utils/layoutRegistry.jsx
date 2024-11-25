@@ -1,5 +1,9 @@
-import DefaultLayout from "../layouts/DefaultLayout";
+import ConfigurableLayout from "../layouts/ConfigurableLayout";
 
 export const LayoutRegistry = {
-    default: DefaultLayout,
+    default: (props) => <ConfigurableLayout layoutName="default" {...props} />,
+    centered: (props) => (
+        <ConfigurableLayout layoutName="centered" {...props} />
+    ),
+    sidebar: (props) => <ConfigurableLayout layoutName="sidebar" {...props} />,
 };

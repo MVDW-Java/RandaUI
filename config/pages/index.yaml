@@ -1,5 +1,5 @@
 title: "Hello World"
-layout: "default"
+layout: "sidebar"
 components:
     - type: "section"
       className: "flex flex-col items-center justify-center min-h-screen gap-6"
